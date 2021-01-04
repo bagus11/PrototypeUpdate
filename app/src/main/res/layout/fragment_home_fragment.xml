@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#145298"
+    tools:context=".Home_fragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_secure">
+
+        <TextView
+            android:id="@+id/dashboard_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gilorybold"
+            android:gravity="center_horizontal"
+            android:text="Security Menu"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+        <!-- Terserah pakai LinearLayout atau GridLayout -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/dashboard_title"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:outlineAmbientShadowColor="@color/cardview_dark_background"
+                            android:background="@drawable/border2">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/btn_patroli"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/satpamm"
+                                android:layout_marginRight="70dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/giloryregular"
+                                android:gravity="center_horizontal"
+                                android:text="Patroli"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/serahterima"
+                                android:id="@+id/serah_terima_jaga"
+                                android:layout_marginRight="70dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/giloryregular"
+                                android:gravity="center_horizontal"
+                                android:text="Serah Terima Jaga"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border3">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/btn_input_jurnal_harian"
+                                android:src="@drawable/articel_logo"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="70dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/giloryregular"
+                                android:gravity="center_horizontal"
+                                android:text="Input Jurnal Harian"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border4">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/history"
+                                android:id="@+id/history_peminjaman"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="70dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/giloryregular"
+                                android:gravity="center_horizontal"
+                                android:text="History Peminjaman"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_dashboard_bawah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border5">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="30dp"
+                                android:id="@+id/approve_peminjaman"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/approval"
+                                android:layout_marginRight="70dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/giloryregular"
+                                android:gravity="center_horizontal"
+                                android:text="Approve Peminjaman"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="190dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border6">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginTop="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/panic"
+                                android:id="@+id/panic_button"
+                                android:layout_marginRight="70dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/giloryregular"
+                                android:gravity="center_horizontal"
+                                android:text="Panic Button"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:labelFor="@id/layout_dashboard_bawah" />
+            </LinearLayout>
+
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+    </ScrollView>
+</FrameLayout>

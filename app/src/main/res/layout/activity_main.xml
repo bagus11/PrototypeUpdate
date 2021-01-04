@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+
+        android:layout_height="180dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_astra"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/gilorybold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/description"
+            android:layout_height="wrap_content"
+            android:text="Enter your emails and password"
+            android:fontFamily="@font/giloryregular"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:id="@+id/txt_email"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/giloryregular"/>
+
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_email"
+            android:hint="Email"
+            android:fontFamily="@font/giloryregular"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#D3D1D1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/giloryregular"
+            android:text="Password"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/txt_password"
+            android:layout_below="@+id/login_username"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt_password"
+            android:fontFamily="@font/giloryregular"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#D3D1D1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:textAlignment="viewEnd"
+            android:fontFamily="@font/giloryregular"
+            android:layout_below="@+id/login_password"
+            android:text="forgot Password ?"
+            android:textColor="@color/black"
+            android:gravity="end" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/gilorybold"
+            android:layout_below="@id/login_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button"
+            android:text="Login"
+            android:id="@+id/btn_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btn_login"
+    android:layout_marginTop="-10dp"
+    android:weightSum="2">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account ?"
+        android:layout_below="@id/btn_login"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/gilorybold"
+        android:textColor="@color/black"
+
+        android:gravity="end" />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text=" Signup"
+        android:id="@+id/txt_signup"
+        android:fontFamily="@font/gilorybold"
+        android:textColor="#145298"
+        android:gravity="start" />
+
+</LinearLayout>
+</LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+

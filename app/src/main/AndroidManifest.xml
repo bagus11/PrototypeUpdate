@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prototype">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_astra"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Prototype">
+        <activity android:name=".Security_code_edit"></activity>
+        <activity android:name=".Approve_peminjaman" />
+        <activity android:name=".History_peminjaman" />
+        <activity android:name=".Input_jurnal_harian" />
+        <activity android:name=".Serah_terima_jaga" />
+        <activity android:name=".Patroli" />
+        <activity android:name=".Splashscreen" />
+        <activity android:name=".Security_code" />
+        <activity android:name=".Edit_profile_setting" />
+        <activity android:name=".Setting_profile" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Sign_up" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
