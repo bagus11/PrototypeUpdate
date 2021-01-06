@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/pengembalian_mobil"
+        android:title="Pengembalian Mobil"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/status_mobil"
+        android:title="Status Mobil"/>
+
+</menu>
