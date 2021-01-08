@@ -16,12 +16,8 @@ public class History_peminjaman extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history_peminjaman);
 
-        //Menampilkan halaman Fragment yang pertama kali muncul
         getFragmentPage(new Fragment_history());
 
-        /*Inisialisasi BottomNavigationView beserta listenernya untuk
-         *menangkap setiap kejadian saat salah satu menu item diklik
-         */
         BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -29,15 +25,17 @@ public class History_peminjaman extends AppCompatActivity {
 
                 Fragment fragment = null;
 
-                //Menantukan halaman Fragment yang akan tampil
                 switch (item.getItemId()) {
-                    case R.id.home:
+                    case R.id.history:
                         fragment = new Fragment_history();
                         break;
-
                     case R.id.profile:
                         fragment = new Status_mobil();
                         break;
+                    case R.id.home:
+                        fragment = new Pengembalian_mobil();
+                        break;
+
                 }
                 return getFragmentPage(fragment);
             }

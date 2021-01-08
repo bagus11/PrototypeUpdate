@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryy"
-    tools:context=".Approve_peminjaman">
+    tools:context=".List_acc_pinjaman">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:weightSum="4">
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -87,20 +87,6 @@
                         android:textColor="@color/black" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/gilorybold"
-                        android:gravity="center_horizontal"
-                        android:text="Status"
-                        android:textAlignment="center"
-                        android:textColor="@color/black" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -124,7 +110,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:weightSum="4">
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -158,21 +144,6 @@
                         android:textColor="@color/black" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/giloryregular"
-                        android:gravity="center_horizontal"
-                        android:text="Diterima"
-                        android:textAlignment="center"
-                        android:textColor="#4CAF50" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -186,7 +157,6 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
                         android:background="@drawable/upload_security"
-
                         android:fontFamily="@font/gilorybold"
                         android:gravity="center_vertical|center_horizontal"
                         android:text="Update"
@@ -201,7 +171,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
-                android:weightSum="4">
+                android:weightSum="3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -240,28 +210,12 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:fontFamily="@font/giloryregular"
-                        android:gravity="center_horizontal"
-                        android:text="Ditolak"
-                        android:textAlignment="center"
-                        android:textColor="#E91E63" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/disable_security"
+                        android:background="@drawable/upload_security"
 
                         android:fontFamily="@font/gilorybold"
                         android:gravity="center_vertical|center_horizontal"
@@ -273,4 +227,5 @@
 
         </LinearLayout>
     </LinearLayout>
+
 </ScrollView>

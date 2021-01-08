@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         sign_up = findViewById(R.id.txt_signup);
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Prototype">
-        <activity android:name=".Security_code_edit"></activity>
+        <activity android:name=".History_pinjaman"></activity>
+        <activity android:name=".List_acc_pinjaman" />
+        <activity android:name=".Dashboard_pimpinan" />
+        <activity android:name=".Form_pengembalian_mobil" />
+        <activity android:name=".Verifikasi_lanjut" />
+        <activity android:name=".From_peminjaman" />
+        <activity android:name=".Dashboard_karyawan" />
+        <activity android:name=".Security_code_edit" />
         <activity android:name=".Approve_peminjaman" />
         <activity android:name=".History_peminjaman" />
         <activity android:name=".Input_jurnal_harian" />

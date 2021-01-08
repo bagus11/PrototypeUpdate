@@ -3,7 +3,6 @@ package com.example.prototype;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -12,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Home_fragment extends Fragment {
+public class Home_security extends Fragment {
 
 
     ImageView patroli, serah_terima_jaga, input_jurnal_harian,approve_peminjaman,history_peminjaman,panic_button;
@@ -21,7 +20,7 @@ public class Home_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View root = inflater.inflate(R.layout.fragment_home_fragment, container, false);
+        final View root = inflater.inflate(R.layout.fragment_home_security, container, false);
 
         patroli = root.findViewById(R.id.btn_patroli);
         serah_terima_jaga = root.findViewById(R.id.serah_terima_jaga);

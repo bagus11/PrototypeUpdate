@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@color/primaryy"
-    tools:context=".Status_mobil">
+    android:layout_height="match_parent"
+    tools:context=".History_pinjaman">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +25,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/gilorybold"
                 android:gravity="center_horizontal"
-                android:text="Approve Peminjaman"
+                android:text="History Peminjaman"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20dp" />
@@ -44,7 +46,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:weightSum="4">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -56,10 +58,12 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilorybold"
                             android:gravity="center_horizontal"
-                            android:text="No"
+                            android:text="NPK"
                             android:textAlignment="center"
                             android:textColor="@color/black" />
                     </LinearLayout>
+
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -86,7 +90,21 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/gilorybold"
                             android:gravity="center_horizontal"
-                            android:text="Status"
+                            android:text="Tgl Sewa"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilorybold"
+                            android:gravity="center_horizontal"
+                            android:text="Tgl Kembali"
                             android:textAlignment="center"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -98,7 +116,9 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:weightSum="4">
+
+
 
 
                     <LinearLayout
@@ -112,7 +132,7 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/giloryregular"
                             android:gravity="center_horizontal"
-                            android:text="1"
+                            android:text="33417107"
                             android:textAlignment="center"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -128,7 +148,7 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/giloryregular"
                             android:gravity="center_horizontal"
-                            android:text="AYLA"
+                            android:text="XENIA"
                             android:textAlignment="center"
                             android:textColor="@color/black" />
                     </LinearLayout>
@@ -144,22 +164,10 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/giloryregular"
                             android:gravity="center_horizontal"
-                            android:text="Tersedia"
+                            android:text="5/01/2021"
                             android:textAlignment="center"
                             android:textColor="#4CAF50" />
                     </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -171,46 +179,17 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/giloryregular"
                             android:gravity="center_horizontal"
-                            android:text="2"
-                            android:textAlignment="center"
-                            android:textColor="@color/black" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/giloryregular"
-                            android:gravity="center_horizontal"
-                            android:text="Pick Up"
-                            android:textAlignment="center"
-                            android:textColor="@color/black" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/giloryregular"
-                            android:gravity="center_horizontal"
-                            android:text="Disewakan"
+                            android:text="12/01/2021"
                             android:textAlignment="center"
                             android:textColor="#E91E63" />
                     </LinearLayout>
                 </LinearLayout>
 
+
+
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 
 </ScrollView>

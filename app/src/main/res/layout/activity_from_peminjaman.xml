@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".From_peminjaman">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:background="@color/primaryy">
+
+        <TextView
+            android:id="@+id/header_cctv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gilorybold"
+            android:gravity="center_horizontal"
+            android:text="Verifikasi Test Car"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_border"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilorybold"
+                android:gravity="center_horizontal"
+                android:text="Form Test Car"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="34dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="No :"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:layout_width="30dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:background="@drawable/edittext"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/giloryregular"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/no_1"/>
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="/"
+                            android:textColor="@color/black"/>
+                        <EditText
+                            android:layout_width="30dp"
+                            android:background="@drawable/edittext"
+                            android:textColor="@color/black"
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/no_2"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="/2021"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/giloryregular"
+                    android:text="No Polisi :"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinhari"
+                    android:layout_width="170dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/spin_backgroud"
+                    android:entries="@array/day_array"
+                    android:fontFamily="@font/giloryregular"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:prompt="@string/title_spin" />
+
+                //Tanggal
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="Tanggal Pemakaian :"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/txt_tanggal_pemakaian"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/giloryregular"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="Tanggal Kembali :"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/txt_tanggal_kembali"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/giloryregular"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                //Jam
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="Jam  Pemakaian :"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/txt_jam_pemakaian"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/giloryregular"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="Jam Kembali :"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/txt_jam_kembali"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/giloryregular"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                //Pemakaian
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/giloryregular"
+                        android:text="Pemakaian :"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/cb_test_drive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-15dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="Test Drive"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/txt_test_drive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="-10dp"
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/giloryregular"
+                            android:hint="keterangan"
+                            android:textColor="@color/black"
+                            android:textColorHint="#D3D1D1"
+                            android:textSize="16dp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_movex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="Movex/Pameran"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <CheckBox
+                            android:id="@+id/cb_lain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:fontFamily="@font/giloryregular"
+                            android:text="Lain lain"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/txt_lain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="-10dp"
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/giloryregular"
+                            android:hint="keterangan"
+                            android:textColor="@color/black"
+                            android:textColorHint="#D3D1D1"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/giloryregular"
+                    android:text="Keperluan Untuk :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txt_keperluan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:fontFamily="@font/giloryregular"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/giloryregular"
+                    android:text="Tujuan ke :"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txt_tujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:fontFamily="@font/giloryregular"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_save"
+            android:fontFamily="@font/gilorybold"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

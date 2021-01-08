@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primaryy"
+    android:layout_height="match_parent"
+    tools:context=".Home_karyawan">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gilorybold"
+        android:textSize="25dp"
+        android:text="Menu Karyawan"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/border7">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pinjam"
+                android:id="@+id/peminjaman_mobil"
+                android:layout_marginRight="70dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/giloryregular"
+                android:gravity="center_horizontal"
+                android:text="Peminjaman "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border6">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/panic"
+                android:id="@+id/panic_button"
+                android:layout_marginRight="70dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/giloryregular"
+                android:gravity="center_horizontal"
+                android:text="Panic Button"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

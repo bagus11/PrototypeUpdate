@@ -9,19 +9,14 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Dashboard extends AppCompatActivity {
-
+public class Dashboard_pimpinan extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
-        //Menampilkan halaman Fragment yang pertama kali muncul
-        getFragmentPage(new Home_security());
+        setContentView(R.layout.activity_dashboard_pimpinan);
+        getFragmentPage(new Home_pimpinan());
 
-        /*Inisialisasi BottomNavigationView beserta listenernya untuk
-         *menangkap setiap kejadian saat salah satu menu item diklik
-         */
         BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigationView);
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -29,10 +24,9 @@ public class Dashboard extends AppCompatActivity {
 
                 Fragment fragment = null;
 
-                //Menantukan halaman Fragment yang akan tampil
                 switch (item.getItemId()){
                     case R.id.home:
-                        fragment = new Home_security();
+                        fragment = new Home_pimpinan();
                         break;
 
                     case R.id.profile:
@@ -44,7 +38,6 @@ public class Dashboard extends AppCompatActivity {
         });
     }
 
-    //Menampilkan halaman Fragment
     private boolean getFragmentPage(Fragment fragment){
         if (fragment != null){
             getSupportFragmentManager()
@@ -55,5 +48,4 @@ public class Dashboard extends AppCompatActivity {
         }
         return false;
     }
-
 }
